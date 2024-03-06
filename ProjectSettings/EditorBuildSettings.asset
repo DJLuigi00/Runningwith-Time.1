@@ -8,7 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home Screen.unity
     guid: b815c60507562e5498eb89232f2259d8
-  - enabled: 1
-    path: Assets/Scenes/Battle 1.unity
-    guid: b7e388801c3521547928d9880659cac1
   m_configObjects: {}
