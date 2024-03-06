@@ -66,8 +66,6 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(gameData);
         }
-
-        Debug.Log("Loaded arrow count = " + gameData.arrowCount);
     }
 
     public void SaveGame() 
@@ -78,7 +76,6 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistObj.SaveData(ref gameData);
         }
 
-        Debug.Log("Saved arrow count = " + gameData.arrowCount);
 
         // save that data to a file using the data handler
         dataHandler.Save(gameData);
