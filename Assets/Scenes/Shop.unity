@@ -323,7 +323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3925e8d9895aee741b08e35d5b9d78e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca1d24fd3471ee24cab2c1bdfd9e7176, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ea57ab0c76cb14f498068f963087d453, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 944d03044e718bd479314bedf94b4ab4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -623,6 +623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: df736c2f862d6134aa9ec60024872618, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4abb291899a1ee440a0285c2c47f4876, type: 2}
     - target: {fileID: 919132149155446097, guid: df736c2f862d6134aa9ec60024872618, type: 3}
       propertyPath: m_Name
       value: LmeGuy
@@ -864,10 +868,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4628302791972393431, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c068d1298e2b12b429bc2cc0cd4be845, type: 2}
+    - target: {fileID: -4265338650084452101, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78f3a1657d664eb48a94694cbe4d18fc, type: 2}
+    - target: {fileID: -425565630206218756, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dc652a4d5d195a46833d1424d542974, type: 2}
+    - target: {fileID: 641451897110366333, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c068d1298e2b12b429bc2cc0cd4be845, type: 2}
     - target: {fileID: 919132149155446097, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
       propertyPath: m_Name
       value: TNT_model_Maya
       objectReference: {fileID: 0}
+    - target: {fileID: 2586607309129781981, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef1669ab29b67104c9baa397bdf7064a, type: 2}
+    - target: {fileID: 3566390031902043909, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c068d1298e2b12b429bc2cc0cd4be845, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce5e48fe871a3a49bc4d2122315b1ba, type: 3}
@@ -1013,7 +1041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df988480854f9734a948ed9a7f17414f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5de226efd2fd014d92d9c5eda688d73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1095,6 +1123,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3a7c431d4e7151649be8af124eabb11f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 474b5a260269a6642ad780e5ee3c3061, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a7c431d4e7151649be8af124eabb11f, type: 3}
       propertyPath: m_Name
       value: Table_Shop
@@ -1205,7 +1237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ae1ae3a07e95db40bf561f811dbc284, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f738812baf71fb40aedbafaabe5284b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1287,6 +1319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b065243f23e92940b4813ad59bb64d7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd1898b7c34c7524e8f7cabd8ef8e632, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b065243f23e92940b4813ad59bb64d7, type: 3}
       propertyPath: m_Name
       value: Oil_model - Copy
@@ -1845,7 +1881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e454f18fbb8980d478326fb84c0f59a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5a05bb648ac9d246aabf36ac968903e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1931,6 +1967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Axe_modle
       objectReference: {fileID: 0}
+    - target: {fileID: 2586607309129781981, guid: 151772130cc4a244ba9c1f5ac29aa0d1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9e2ae02c7ce4f34eb9672d1199f5c84, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 151772130cc4a244ba9c1f5ac29aa0d1, type: 3}
@@ -2396,7 +2436,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 076b5e3f912016f4d9c48a84279e049d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 82063f3a52ad506439b726b4eb5d9557, type: 2}
+      objectReference: {fileID: 2100000, guid: 67e06dacd8d84e942a12d029c9f2baed, type: 2}
     - target: {fileID: 919132149155446097, guid: 076b5e3f912016f4d9c48a84279e049d, type: 3}
       propertyPath: m_Name
       value: Rock
