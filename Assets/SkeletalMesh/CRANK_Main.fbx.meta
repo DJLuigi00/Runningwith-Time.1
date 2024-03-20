@@ -3,7 +3,17 @@ guid: 294d9d77c2e76544f8f83e812ddf278f
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BODY_TEXT
+    second: {fileID: 2100000, guid: 86de9978648cb134198c5be2b17296e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head_Texture
+    second: {fileID: 2100000, guid: d5ce500605e16bc4cb815b7614bbb63b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
