@@ -36,12 +36,16 @@ public class PlayerControler : MonoBehaviour
     {
         if (characterIsActive)
         {
+            //Old Functions:
             GetInput();
             MovePlayer();
+            BoundsCheck();
             //MovePlayerCamrea();
             //MouseLock();
-            BoundsCheck();
             //Sprint();
+
+            // New functions:
+            ForceRotation();
         }
         
     }
@@ -105,5 +109,10 @@ public class PlayerControler : MonoBehaviour
             transform.position = defaultPlayerPosition;
             throw new Exception("Player Fell Out Of Bounds");
         }
+    }
+
+    private void ForceRotation()
+    {
+        transform.rotation = Quaternion.Euler(0, 0 , 0);
     }
 }
