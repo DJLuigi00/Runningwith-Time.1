@@ -121,6 +121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CRANK
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 294d9d77c2e76544f8f83e812ddf278f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 91a5bf81f836c8a46a911073b4f4e196, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
