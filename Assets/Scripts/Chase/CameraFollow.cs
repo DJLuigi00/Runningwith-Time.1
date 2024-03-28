@@ -5,9 +5,13 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
+    public bool isActive = false;
 
     private void Update()
     {
-        transform.position = new Vector3(transform.position.x, playerTransform.position.y + 6f, playerTransform.position.z - 8.5f);
+        if (isActive)
+        {
+            transform.position = new Vector3(transform.position.x, playerTransform.position.y + 6f, playerTransform.position.z - 8.5f);
+        }
     }
 }
