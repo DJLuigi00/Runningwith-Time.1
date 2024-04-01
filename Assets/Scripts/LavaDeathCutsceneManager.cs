@@ -23,8 +23,8 @@ public class LavaDeathCutsceneManager : MonoBehaviour
         if(timer == 0)
         {
             countDownManager.SetActive(true);
-            cameraFollow.isActive = true;
             Destroy(anim);
+            cameraFollow.isActive = true;
         }
     }
 }
