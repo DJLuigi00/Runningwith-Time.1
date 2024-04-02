@@ -34344,7 +34344,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36140
+  m_Name: pb_Mesh29288
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -39495,7 +39495,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1547410155}
-  - component: {fileID: 1547410156}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -39518,21 +39517,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1547410156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547410154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b95ead399aafd247a1ce66b86df68cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 2029328484}
-  musicClip: {fileID: 8300000, guid: ca34bf6aadf8eb745991f5e1f0636ebf, type: 3}
-  musicClipLoop: {fileID: 8300000, guid: c305be1a23f133548be171f63c62c844, type: 3}
 --- !u!1 &1549299137
 GameObject:
   m_ObjectHideFlags: 0
@@ -51052,7 +51036,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: df0a46d194eb546489b7e99e13901b68, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4c5d33202d53bba40816fe45226d0331, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
