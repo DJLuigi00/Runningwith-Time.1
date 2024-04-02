@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private int sceneIndex = 0;
     public bool newGame;
 
+    public bool playStartGSScreen = true;
+
     private void Awake()
     {
         if (gameManager == null)
@@ -28,10 +30,10 @@ public class GameManager : MonoBehaviour
     // Change Level By Index
     public void ChangeScene(int sceneIndex)
     {
-        if (sceneIndex < sceneName.Length && sceneIndex >= 0)
+        if (/*sceneIndex < sceneName.Length &&*/ sceneIndex >= 0)
         {
             this.sceneIndex = sceneIndex;
-            SceneManager.LoadScene(sceneName[this.sceneIndex]);
+            SceneManager.LoadScene(/* sceneName[this.sceneIndex] */ sceneIndex);
         }
         else
             throw new Exception("Level specified " + sceneIndex + " in ChangeScene(int) does not exist!");

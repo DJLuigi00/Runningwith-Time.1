@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Death_Lava.unity
     guid: 68a3ff5ec571c394393b4c2748bc9a8f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 98b251fab88f98645b79cbdeee9173e3
   m_configObjects: {}
