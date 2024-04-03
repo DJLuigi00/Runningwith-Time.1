@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -11,7 +12,17 @@ public class CameraFollow : MonoBehaviour
     {
         if (isActive)
         {
-            transform.position = new Vector3(transform.position.x, playerTransform.position.y + 6f, playerTransform.position.z - 8.5f);
+            if(Input.GetKey(KeyCode.E)) 
+            {
+                transform.position = new Vector3(transform.position.x, playerTransform.position.y + 6f, playerTransform.position.z + 8.5f);
+                transform.localRotation = Quaternion.Euler(16, 180, 0);
+            }
+            else 
+            { 
+                transform.position = new Vector3(transform.position.x, playerTransform.position.y + 6f, playerTransform.position.z - 8.5f);
+                transform.localRotation = Quaternion.Euler(16, 0, 0);
+            }
+
         }
     }
 }
