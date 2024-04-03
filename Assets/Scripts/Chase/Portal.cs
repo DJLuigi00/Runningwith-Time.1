@@ -12,4 +12,9 @@ public class Portal : MonoBehaviour
     {
         SceneManager.LoadScene(sceneID);
     }
+
+    public void ChangeScene(int sceneID)
+    {
+       SceneManager.LoadScene(sceneID);
+    }
 }

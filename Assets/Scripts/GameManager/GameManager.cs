@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private string[] sceneName = { "MainMenu", "MainLevel", "Labyrinth" };
     private int sceneIndex = 0;
     public bool newGame;
+    public float savedPlayerTurnCount;
 
     public bool playStartGSScreen = true;
 

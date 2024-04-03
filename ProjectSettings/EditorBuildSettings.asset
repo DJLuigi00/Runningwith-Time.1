@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Home Screen.unity
     guid: b815c60507562e5498eb89232f2259d8
   - enabled: 1
-    path: Assets/Scenes/Battle.unity
+    path: Assets/Scenes/Battle 1.unity
     guid: 47efd8023982afc4d84a99d76473e3cb
   - enabled: 1
     path: Assets/Scenes/Platforming.unity
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 98b251fab88f98645b79cbdeee9173e3
+  - enabled: 1
+    path: Assets/Scenes/Battle 2.unity
+    guid: b9ea7f7e162c5494b92c1c0129e38645
   m_configObjects: {}

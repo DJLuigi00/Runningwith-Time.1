@@ -11,7 +11,7 @@ public class TNT : MonoBehaviour
     {
         if (battle.PlayerTurn == true)
         {
-            if(battle.Tnt == true) 
+            if (battle.Tnt == true) 
             {
                 battle.playerDamage = 250;
                 animator.SetTrigger("DoExplosion");

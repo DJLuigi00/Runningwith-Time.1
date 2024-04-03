@@ -22,7 +22,7 @@ public class Search : MonoBehaviour
     {
         if (battle.PlayerTurn == true)
         {
-            randomSearch = Random.Range(1, 5);
+            randomSearch = Random.Range(1, 11);
             
             switch (randomSearch)
             {
@@ -46,7 +46,36 @@ public class Search : MonoBehaviour
                     battle.ARMOR.SetActive(true);
                     Debug.Log("Armor =" + battle.armor);
                     break;
-
+                case 5:
+                    battle.oilOnFeild = true;
+                    battle.OIL.SetActive(true);
+                    Debug.Log("oil =" + battle.oil);
+                    break;
+                case 6:
+                    battle.oilOnFeild = true;
+                    battle.OIL.SetActive(true);
+                    Debug.Log("oil =" + battle.oil);
+                    break;
+                case 7:
+                    battle.axeOnFeild = true;
+                    battle.AXE.SetActive(true);
+                    Debug.Log("Axe =" + battle.axe);
+                    break;
+                case 8:
+                    battle.axeOnFeild = true;
+                    battle.AXE.SetActive(true);
+                    Debug.Log("Axe =" + battle.axe);
+                    break;
+                case 9:
+                    battle.armorOnFeild = true;
+                    battle.ARMOR.SetActive(true);
+                    Debug.Log("Armor =" + battle.armor);
+                    break;
+                case 10:
+                    battle.axeOnFeild = true;
+                    battle.AXE.SetActive(true);
+                    Debug.Log("Axe =" + battle.axe);
+                    break;
             }
             if (battle.oil == true)
             {

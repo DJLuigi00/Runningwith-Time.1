@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-
-
+using UnityEngine.UI;
 
 public class Battle : MonoBehaviour
 {
+    [Header("Game Objects")]
     public GameObject Enm_HP;
     public GameObject TimeLeft;
     public GameObject AXE;
@@ -22,10 +22,21 @@ public class Battle : MonoBehaviour
     public GameObject Tnt_Button;
     public GameObject Axe_Button;
     public GameObject Armor_Button;
+    public GameObject CongratsScreen;
+    public GameObject DefaultUI;
+    public GameManager manager;
 
     public GameObject[] Hit = new GameObject[3];
 
+    [Header("TMP")]
     [SerializeField] TextMeshProUGUI HPText;
+    [SerializeField] public TMP_Text inventoryOilTxt;
+    [SerializeField] public TMP_Text inventoryTntTxt;
+    [SerializeField] public TMP_Text inventoryArmorTxt;
+    [SerializeField] public TMP_Text inventoryAxeTxt;
+    [SerializeField] public TMP_Text winTime;
+
+    [Header("Ints/floats")]
     public float playerTurnCount;
 
 
@@ -37,6 +48,8 @@ public class Battle : MonoBehaviour
     public int playerDamage;
 
     public int playerLevel;
+
+    [Header("Bools")]
     public bool PlayerTurn;
     public bool Tnt;
     public bool TntOnFeild;
@@ -52,8 +65,8 @@ public class Battle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-     PlayerTurn = true;
+        manager = FindObjectOfType<GameManager>();
+        PlayerTurn = true;
         AXE.SetActive(false);
         OIL.SetActive(false);
         ARMOR.SetActive(false);
@@ -63,13 +76,22 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // How the enmey attacks
+        if (!BattleOver)
         {
-            playerTurnCount -= Time.deltaTime;
-            int minutes = Mathf.FloorToInt(playerTurnCount / 60);
-            int seconds = Mathf.FloorToInt(playerTurnCount % 60);
-            HPText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            Timer();
         }
+
+        if (enemyTurnCount < 0)
+        {
+            enemyTurnCount = 0;
+        }
+        if (enemyTurnCount == 0)
+        {
+            CongratsScreen.SetActive(true);
+            DefaultUI.SetActive(false);
+            manager.savedPlayerTurnCount = playerTurnCount;
+        }
+
         if (!PlayerTurn) 
         {
             enemyDamage = unitLevel + Random.Range(1, 12);
@@ -130,8 +152,49 @@ public class Battle : MonoBehaviour
 
         }
 
-
-        
         Enm_HP.GetComponent<TextMeshProUGUI>().SetText(enemyTurnCount.ToString());
+
+        if(oilPressed)
+        {
+            inventoryOilTxt.text = "1/1";
+        }
+        if (axe)
+        {
+            inventoryAxeTxt.text = "1/1";
+        }
+        if (armor) 
+        {
+            inventoryArmorTxt.text = "1/1";
+        }
+        if(Tnt)
+        {
+            inventoryTntTxt.text = "1/1";
+        }
+        if (!oilPressed)
+        {
+            inventoryOilTxt.text = "0/1";
+        }
+        if (!axe)
+        {
+            inventoryAxeTxt.text = "0/1";
+        }
+        if (!armor)
+        {
+            inventoryArmorTxt.text = "0/1";
+        }
+        if (!Tnt)
+        {
+            inventoryTntTxt.text = "0/1";
+        }
+    }
+
+    void Timer()
+    {
+        {
+            playerTurnCount -= Time.deltaTime;
+            int minutes = Mathf.FloorToInt(playerTurnCount / 60);
+            int seconds = Mathf.FloorToInt(playerTurnCount % 60);
+            HPText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 }
