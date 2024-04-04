@@ -1,10 +1,8 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Battle : MonoBehaviour
 {
@@ -24,6 +22,7 @@ public class Battle : MonoBehaviour
     public GameObject Armor_Button;
     public GameObject CongratsScreen;
     public GameObject DefaultUI;
+    public GameObject MusicPlayer;
     public GameManager manager;
 
     public GameObject[] Hit = new GameObject[3];
@@ -66,6 +65,7 @@ public class Battle : MonoBehaviour
     void Start()
     {
         manager = FindObjectOfType<GameManager>();
+        playerTurnCount = manager.savedPlayerTurnCount;
         PlayerTurn = true;
         AXE.SetActive(false);
         OIL.SetActive(false);
@@ -80,6 +80,7 @@ public class Battle : MonoBehaviour
         {
             Timer();
         }
+        else { BattleOver = true; }
 
         if (enemyTurnCount < 0)
         {
@@ -181,12 +182,21 @@ public class Battle : MonoBehaviour
         {
             inventoryTntTxt.text = "0/1";
         }
+        if (playerTurnCount <= 0)
+        {
+            SceneManager.LoadScene(4);
+        }
+
+        manager.savedPlayerTurnCount = playerTurnCount;
     }
 
     void Timer()
     {
         {
-            playerTurnCount -= Time.deltaTime;
+            if (enemyTurnCount > 0)
+            {
+                playerTurnCount -= Time.deltaTime;
+            }
             int minutes = Mathf.FloorToInt(playerTurnCount / 60);
             int seconds = Mathf.FloorToInt(playerTurnCount % 60);
             HPText.text = string.Format("{0:00}:{1:00}", minutes, seconds);

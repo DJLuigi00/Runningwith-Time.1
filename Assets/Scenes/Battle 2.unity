@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5d891a941db70b141a28c2053ab597ed, type: 2}
   m_LightingSettings: {fileID: 784191876}
 --- !u!196 &4
 NavMeshSettings:
@@ -408,7 +408,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73342
+  m_Name: pb_Mesh28400
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2605,6 +2605,7 @@ MonoBehaviour:
   Armor_Button: {fileID: 111360751}
   CongratsScreen: {fileID: 2069645358}
   DefaultUI: {fileID: 84225226}
+  MusicPlayer: {fileID: 0}
   manager: {fileID: 0}
   Hit:
   - {fileID: 1933342705}
