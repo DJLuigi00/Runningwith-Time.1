@@ -11,7 +11,7 @@ public class Armor : MonoBehaviour
         if (battle.armor == true)
         {
             battle.armor = false;
-            battle.playerTurnCount += 50;
+            battle.playerTurnCount += 100;
             Debug.Log("Player HP = " + battle.playerTurnCount);
             if (battle.oil == true)
             {

@@ -90,6 +90,7 @@ public class Battle : MonoBehaviour
             CongratsScreen.SetActive(true);
             DefaultUI.SetActive(false);
             manager.savedPlayerTurnCount = playerTurnCount;
+            BattleOver = true;
         }
 
         if (!PlayerTurn) 
@@ -145,12 +146,6 @@ public class Battle : MonoBehaviour
         {
             OIL.SetActive(false);
         }
-        //End of battle
-        if (enemyTurnCount <= 0)
-        {
-            BattleOver = true;
-
-        }
 
         Enm_HP.GetComponent<TextMeshProUGUI>().SetText(enemyTurnCount.ToString());
 
@@ -195,6 +190,7 @@ public class Battle : MonoBehaviour
             int minutes = Mathf.FloorToInt(playerTurnCount / 60);
             int seconds = Mathf.FloorToInt(playerTurnCount % 60);
             HPText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            winTime.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
 }
