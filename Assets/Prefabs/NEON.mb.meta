@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Silver_Grey
-    second: {fileID: 2100000, guid: d93bb9403b5aab3479532c38518f5844, type: 2}
+    second: {fileID: 2100000, guid: ac79fe8aa5563594aa941c2a3a043ae5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
