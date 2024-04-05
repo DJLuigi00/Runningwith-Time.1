@@ -35,7 +35,7 @@ public class ProgressBarManager : MonoBehaviour
 
         if (neonProgressBar.fillAmount >+ crankProgressBar.fillAmount || crankProgressBar.fillAmount - neonProgressBar.fillAmount < 0.01)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
 
         neon.transform.position = new Vector3(neon.transform.position.x, neon.transform.position.y, neonProgressBar.fillAmount * 348f);
