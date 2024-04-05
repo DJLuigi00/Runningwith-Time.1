@@ -1855,7 +1855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6570.5107}
+  m_AnchoredPosition: {x: 0, y: -6280}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718898507
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Font: \nJazz Create Bubble Font from the Unity Asset Store \n\nSoftware:
+  m_text: "Assets: \nJazz Create Bubble Font (Unity Asset Store)\nfreesound.Org\norangefreesounds.com\n\nSoftware:
     \nPhotoshop\nSoundTrap\nBandLab\nMaya\nMudBox 2024\nBlender\nGitHub"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1cca559e525ab774fbb9ccea52c72eda, type: 2}
