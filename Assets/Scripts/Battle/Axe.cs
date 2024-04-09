@@ -16,7 +16,14 @@ public class Axe : MonoBehaviour
                 animator.SetTrigger("DoSlash");
                 battle.enemyTurnCount -= battle.playerDamage;
                 battle.axe = false;
-                battle.PlayerTurn = false;
+                if (battle.oil == true)
+                {
+                    battle.oil = false;
+                }
+                else
+                {
+                    battle.PlayerTurn = false;
+                }
                 Debug.Log("Enemy Health =" + battle.enemyTurnCount);
                 Debug.Log("Axe =" + battle.axe);
             }
