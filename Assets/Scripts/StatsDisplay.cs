@@ -5,16 +5,16 @@ using TMPro;
 
 public class StatsDisplay : MonoBehaviour, IDataPersistence
 {
-    [HideInInspector] public int deathCount;
-    [HideInInspector] public int winCount;
+    /*[HideInInspector]*/ public int deathCount;
+    /*[HideInInspector]*/ public int winCount;
 
     [SerializeField] private TMP_Text deathCountTxt;
     [SerializeField] private TMP_Text winCountTxt;
 
-    private void Start()
+    private void Update()
     {
         deathCountTxt.text = this.deathCount.ToString();
-        winCountTxt.text = this.deathCount.ToString();
+        winCountTxt.text = this.winCount.ToString();
     }
 
     public void LoadData(GameData data)
