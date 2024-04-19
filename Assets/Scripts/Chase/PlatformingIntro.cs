@@ -12,6 +12,7 @@ public class PlatformingIntro : MonoBehaviour
     [SerializeField] private TMP_Text text;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject dummy;
+    [SerializeField] private GameObject pauseManager;
 
     void Update()
     {
@@ -46,7 +47,7 @@ public class PlatformingIntro : MonoBehaviour
                 case 4:
                     text.text = "GO!!!"; text.color = Color.green; break;
                 case 5:
-                    text.text = ""; player.SetActive(true); dummy.SetActive(false); break;
+                    text.text = ""; player.SetActive(true); dummy.SetActive(false); pauseManager.SetActive(true); break;
             }
         }
     }
