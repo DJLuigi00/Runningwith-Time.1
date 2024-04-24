@@ -2110,7 +2110,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28320
+  m_Name: pb_Mesh31858
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2683,6 +2683,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 177272631886063673, guid: a2794ff67ad96044e9e53c14d65b6e82, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1355296464}
+    - targetCorrespondingSourceObject: {fileID: 177272631886063673, guid: a2794ff67ad96044e9e53c14d65b6e82, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355296465}
   m_SourcePrefab: {fileID: 100100000, guid: a2794ff67ad96044e9e53c14d65b6e82, type: 3}
 --- !u!1 &600621980
 GameObject:
@@ -3161,7 +3164,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34634
+  m_Name: pb_Mesh31826
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3326,7 +3329,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28250
+  m_Name: pb_Mesh31770
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3500,7 +3503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &785024713
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,7 +4396,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28102
+  m_Name: pb_Mesh31586
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4822,7 +4825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1195266682
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -5766,6 +5769,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!320 &1355296465
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355296462}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 5ac2c004d89a9754fb2c2d2354ac5eda, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1363670712
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,6 +5796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363670714}
   - component: {fileID: 1363670713}
+  - component: {fileID: 1363670715}
   m_Layer: 0
   m_Name: CRANK_Main
   m_TagString: Untagged
@@ -5835,6 +5856,23 @@ Transform:
   m_Father: {fileID: 1195266685}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1363670715
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363670712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 95ec7a6aea8d3d7498dc9cb1e25d3c7b, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1376574013
 GameObject:
   m_ObjectHideFlags: 0
@@ -6146,7 +6184,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28156
+  m_Name: pb_Mesh31654
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7267,7 +7305,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34636
+  m_Name: pb_Mesh31896
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
